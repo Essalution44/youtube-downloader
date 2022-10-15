@@ -1,0 +1,7 @@
+# the fist programme is to download videos from YouTube using the pytube package from python
+import pytube
+link = input("enter Youtube link here \n")
+yt = pytube.YouTube(link)
+yt.streams.first().download()
+print("the vid has been downloaded", link)
+v
